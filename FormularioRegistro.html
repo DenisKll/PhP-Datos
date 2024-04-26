@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>ejercicio2.html</title>
+        <link rel="stylesheet" href="EstiloFormulario.css">
+    </head>
+ 
+    <body>
+        <fieldset>
+        <form action="Conexion.php" method="post">
+            <p>Nombre: <input type="text" name="nombre" required  pattern="[a-zA-Z]+" minlength="3" maxlength="12" ></p>
+            <p>Apellido: <input type="text" name="apellido" required pattern="[a-zA-Z]+" minlength="4" maxlength="20" ></p>
+            <p>Email: <input type="text" name="email" required pattern=".*@.*"  ></p>
+            <p>Fecha de Nacimiento: <input type="date" name="nacimiento" required min="1920-01-01" max="2006-12-31" ></p>
+            <p>Contraseña: <input type="password" name="password" required minlength="8" maxlength="12" pattern="^(?=.*[a-zA-Z])(?=.*[^a-zA-Z0-9]).+$"></p>
+            <button type="submit">Enviar</button>
+        </form>
+    </fieldset>
+    </body>
+</html>
